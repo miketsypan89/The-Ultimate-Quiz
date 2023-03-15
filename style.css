@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: gray 1px solid;
+}
+
+.side-bar {
+    width: 20%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+}
+
+.both-sections {
+    display: flex;
+}
+
+.view-hide-btn {
+    width: 200px;
+    height: 40px;
+}
+
+.main-body {
+    display: block;
+    width: 80%;
+}
+
+.scoreboard {
+    background-color: bisque;
+    display: block;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.scoreboard-header {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.timer {
+    display: flex;
+    background-color: rgb(132, 131, 117);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.score-correct {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.score-incorrect {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.score-meter {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkkhaki;
+    padding: 20px;
+    width: 500px;
+}
+
+.scoreboard-content {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-page {
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 250px;
+}
+
+.quiz-greeting {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.italicized-span {
+    font-style: italic;
+}
+
+.challenge-paragraph {
+    padding: 25px;
+}
+
+.quiz-instruction {
+    padding: 15px;
+    padding-bottom: 50px;
+}
+
+.start-quiz-btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+}
