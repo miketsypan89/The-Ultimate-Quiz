@@ -11,7 +11,14 @@ body {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: gray 1px solid;
+    border-bottom: rgb(97, 97, 97) 2px solid;
+    z-index: 500;
+    background-color: rgb(0, 0, 0);
+    color: rgb(247, 241, 232);
+    font-size: 52px;
+    text-align: left;
+    padding-left: 150px;
+    font-weight: 100;
 }
 
 .side-bar {
@@ -57,24 +64,35 @@ body {
 }
 
 .scoreboard {
-    background-color: bisque;
     display: block;
     justify-content: space-around;
     padding: 15px;
+    padding-top: 8px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(247, 241, 232);
+    box-shadow: 0px 12px 13px -10px rgba(0, 0, 0, 0.49);
 }
 
 .scoreboard-header {
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    font-size: 26px;
 }
 
 .timer {
     display: flex;
-    background-color: rgb(132, 131, 117);
+    border-top: solid gray 1px;
     padding: 20px;
+    padding-left: 50px;
     width: 250px;
     text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+
 }
 
 .score-correct {
@@ -92,9 +110,12 @@ body {
 .score-meter {
     display: flex;
     justify-content: space-evenly;
-    background-color: darkkhaki;
+    border-top: solid gray 1px;
     padding: 20px;
     width: 500px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
 }
 
 .scoreboard-content {
@@ -113,8 +134,9 @@ body {
 }
 
 .quiz-greeting {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
+    font-size: 54px;
 }
 
 .italicized-span {
@@ -127,7 +149,7 @@ body {
 
 .quiz-instruction {
     padding: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .start-quiz-btn {
@@ -140,67 +162,7 @@ body {
     text-align: center;
 }
 
-.challenge1 {
-    margin: 2vw;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 250px;
-    height: 670px;
-    background-color: rgb(243, 239, 239);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.challenge2 {
-    margin: 2vw;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 250px;
-    height: 670px;
-    background-color: rgb(243, 239, 239);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.challenge3 {
-    margin: 2vw;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 250px;
-    height: 670px;
-    background-color: rgb(243, 239, 239);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.challenge4 {
-    margin: 2vw;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 250px;
-    height: 670px;
-    background-color: rgb(243, 239, 239);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.challenge5 {
-    margin: 2vw;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 250px;
-    height: 670px;
-    background-color: rgb(243, 239, 239);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.challenge6 {
-    margin: 2vw;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 250px;
-    height: 670px;
-    background-color: rgb(243, 239, 239);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.challenge7 {
+.challenge {
     margin: 2vw;
     text-align: center;
     padding: 30px;
@@ -215,6 +177,7 @@ body {
     padding-left: 280px;
     padding-bottom: 50px;
     text-align: left;
+    font-size: 30px;
 }
 
 .list-of-answers {
@@ -223,37 +186,69 @@ body {
     padding-left: 280px;
     padding-bottom: 30px;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.optionA {
-    width: 800px;
-    height: 80px;
+.option {
+    width: 44vw;
+    height: auto;
     margin-bottom: 30px;
-}
-
-.optionB {
-    width: 800px;
-    height: 80px;
-    margin-bottom: 30px;
-}
-
-.optionC {
-    width: 800px;
-    height: 80px;
-    margin-bottom: 30px;
-}
-
-.optionD {
-    width: 800px;
-    height: 80px;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 22px;
 }
 
 .answer-option {
     width: 50px;
     height: 50px;
-    border: 1px gray solid;
+    background-color: rgb(225, 224, 223);
     border-radius: 50px;
-    padding-right: 25px;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.results-page {
+    margin: 2vw;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 250px;
+    height: 670px;
+    background-color: rgb(243, 239, 239);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
+}
+
+.user-init-input {
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.results-page {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.user-instruction {
+    padding: 15px;
+    padding-bottom: 50px;
+}
+
+.submit-init-btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.final-form {
+    content: "\a";
+    white-space: pre;
+}
+
+.hidden {
+    display: none;
 }
