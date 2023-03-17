@@ -11,6 +11,7 @@ var challenge6 = document.querySelector("#challenge6")
 var challenge7 = document.querySelector("#challenge7")
 var resultsPage = document.querySelector(".results-page")
 var option = document.querySelector(".option");
+var captureListOfAnswers = document.querySelector(".list-of-answers");
 
 // set variables for the timer
 const startingMinutes = 1;
@@ -37,16 +38,26 @@ function startQuiz() {
 
 
 
-function makingAChoice() {
+function makingAChoice(event) {
+    var btnClicked = event.target;
+    if (btnClicked.matches("button")) {
+        challenge1.classList.add("hidden")
+        if (btnClicked.classList.contains("correct")) {
+            document.querySelector(".main-body").background.color = "green";
+        } else {
+            challenge2.classList.remove("hidden")
+        }
+    }
     // hide the challenge1
-    challenge1.classList.add("hidden")
-    // display challenge2
-    challenge2.classList.remove("hidden")
+    // challenge1.classList.add("hidden")
+    // // display challenge2
+    // challenge2.classList.remove("hidden")
 
 }
 
 startBtn.addEventListener("click", startQuiz)
-option.addEventListener("click", makingAChoice);
+captureListOfAnswers.addEventListener("click", makingAChoice);
+
 
 
 
