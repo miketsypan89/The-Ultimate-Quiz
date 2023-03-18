@@ -26,11 +26,9 @@ function updateCountdown() {
     seconds = seconds < 1 ? "0" + seconds : seconds;
     countdownEl.innerHTML = `0${minutes}:${seconds}`;
     time--;
-    console.log(time)
     if (time === -1) {
-        // document.querySelector("0");
         clearInterval(countDownInterval);
-        console.log('did i fire')
+        console.log('counter stopped')
     }
 }
 
@@ -50,11 +48,11 @@ function makingAChoice(event) {
         challenge1.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         challenge2.classList.remove("hidden")
     }
@@ -66,11 +64,11 @@ function makingAChoice2(event) {
         challenge2.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         challenge3.classList.remove("hidden")
     }
@@ -82,11 +80,11 @@ function makingAChoice3(event) {
         challenge3.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         challenge4.classList.remove("hidden")
     }
@@ -98,11 +96,11 @@ function makingAChoice4(event) {
         challenge4.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         challenge5.classList.remove("hidden")
     }
@@ -114,11 +112,11 @@ function makingAChoice5(event) {
         challenge5.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         challenge6.classList.remove("hidden")
     }
@@ -130,11 +128,11 @@ function makingAChoice6(event) {
         challenge6.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         challenge7.classList.remove("hidden")
     }
@@ -146,29 +144,59 @@ function makingAChoice7(event) {
         challenge7.classList.add("hidden")
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
-            document.querySelector(".main-body").style.backgroundColor = "green";
+            document.querySelector(".main-body").style.backgroundColor = "#4ec864";
 
         } else {
             //incorrect answer causes the main-body page to turn red
-            document.querySelector(".main-body").style.backgroundColor = "red";
+            document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         resultsPage.classList.remove("hidden")
+
     }
 }
 
-// Increment correct answers to the scoreboard
-var correctAnswer = document.getElementById("incrementBtn");
+// Increment the correct answers to the scoreboard
+// declaring vars for the correct answers
+var correctAnswer1 = document.getElementById("incrementBtn1");
+var correctAnswer2 = document.getElementById("incrementBtn2");
+var correctAnswer3 = document.getElementById("incrementBtn3");
+var correctAnswer4 = document.getElementById("incrementBtn4");
+var correctAnswer5 = document.getElementById("incrementBtn5");
+var correctAnswer6 = document.getElementById("incrementBtn6");
+var correctAnswer7 = document.getElementById("incrementBtn7");
 var correctCounter = document.getElementById("correct-counter");
+
 var count = 0;
-correctAnswer.addEventListener("click", function () {
+
+
+correctAnswer1.addEventListener("click", function () {
     count++;
     correctCounter.innerHTML = count;
 });
-
-
-
-
-// Need function to decrement incorrect answers
+correctAnswer2.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
+correctAnswer3.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
+correctAnswer4.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
+correctAnswer5.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
+correctAnswer6.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
+correctAnswer7.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
 
 
 //
