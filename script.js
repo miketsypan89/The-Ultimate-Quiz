@@ -15,8 +15,6 @@ var captureListOfAnswers = document.querySelectorAll(".list-of-answers");
 console.log(captureListOfAnswers)
 // set variables for the timer
 var countDownInterval = null;
-
-
 let time = 60;
 const countdownEl = document.getElementById('countdown');
 countdownEl.innerHTML = "01:00";
@@ -158,7 +156,15 @@ function makingAChoice7(event) {
     }
 }
 
-// Need function to increment correct answers
+// Increment correct answers to the scoreboard
+var correctAnswer = document.getElementById("incrementBtn");
+var correctCounter = document.getElementById("correct-counter");
+var count = 0;
+correctAnswer.addEventListener("click", function () {
+    count++;
+    correctCounter.innerHTML = count;
+});
+
 
 
 
