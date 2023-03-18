@@ -16,25 +16,15 @@
     <h1 class="main-header">The Ultimate Quiz</h1>
     <div class="both-sections">
         <aside class="side-bar">
-            <h2 class="aside-section-title">High Scores
+            <h2 class="aside-section-title">Highest Score
                 <button class="view-hide-btn">View</button>
             </h2>
             <div class="user-list">
                 <div class="user-info">
-                    <div class="place">1. </div>
-                    <div class="user-init">initials</div>
-                    <div class="score">00</div>
+                    <div class="user-init"></div>
+                    <div class="score"></div>
                 </div>
-                <div class="user-info">
-                    <div class="place">1. </div>
-                    <div class="user-init">initials</div>
-                    <div class="score">00</div>
-                </div>
-                <div class="user-info">
-                    <div class="place">1. </div>
-                    <div class="user-init">initials</div>
-                    <div class="score">00</div>
-                </div>
+
                 <div class="clear-btn-container"><button class="clear-btn">Clear</button>
                 </div>
             </div>
@@ -49,15 +39,15 @@
                     </div>
                     <div class="score-meter">
                         <div class="correct-count"></div>
-                        <div id="correct-counter" class="correct-count">0</div>
-                        <div class="correct-count"> out of 7 are correct</div>
+                        <div id="correct-counter" class="correct-count-digit"> 0 </div>
+                        <div class="correct-count"> out of 7 correct</div>
                     </div>
                 </div>
             </div>
             <div class="welcome-page">
                 <h3 class="quiz-greeting">Welcome to the <span class="italicized-span">True Friend</span> Quiz</h3>
                 <h4 class="challenge-paragraph">How well do you know Mike Tsypan?</h4>
-                <h5 class="quiz-instruction">Take the one minute Quiz to find out if you're a real friend, or an
+                <h5 class="quiz-instruction">Take this one minute Quiz to find out if you're a real friend, or an
                     acquaintance of Mike.</h5>
                 <button class="start-quiz-btn">Start Quiz</button>
             </div>
@@ -185,13 +175,14 @@
             <div class="results-page hidden">
                 <h4 class="results-heading">Thank you for taking the Quiz!</h4>
                 <div class="score-placment">You've finished at: <span class="seconds-scored">00</span> seconds!</div>
-                <h4 class="verdict1 hidden">You are a True Friend!</h4>
-                <h4 class="verdict2">You appear to be Mike's acquaintance because you've missed at least one answer.
+                <h4 class="verdict1 ">You've got all of the 7 answers right! You must be a True Friend! :)</h4>
+                <h4 class="verdict2 hidden">You appear to be Mike's acquaintance because you've missed at least one
+                    answer. :(
                 </h4>
                 <h4 class="final-instruction">Please enter your initials to submit your results:</h4>
                 <div class="final-form">
                     <input class="user-init-input" maxlength="4">
-                    <input type="submit" class="submit-init-btn">
+                    <button type="submit" class="submit-init-btn">Submit</button>
                 </div>
             </div>
         </div>

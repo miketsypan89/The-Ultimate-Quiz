@@ -13,11 +13,20 @@ var resultsPage = document.querySelector(".results-page")
 var option = document.querySelector(".option");
 var captureListOfAnswers = document.querySelectorAll(".list-of-answers");
 console.log(captureListOfAnswers)
+
+
 // set variables for the timer
 var countDownInterval = null;
 let time = 60;
 const countdownEl = document.getElementById('countdown');
 countdownEl.innerHTML = "01:00";
+
+const highScoreInitials = localStorage.getItem('highestScoreInitials')
+const highScoreTime = localStorage.getItem('highestScoreTime')
+
+document.querySelector('.user-init').innerText = highScoreInitials;
+document.querySelector('.score').innerText = highScoreTime;
+
 
 
 function updateCountdown() {
@@ -53,6 +62,7 @@ function makingAChoice(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+
         }
         challenge2.classList.remove("hidden")
     }
@@ -151,8 +161,19 @@ function makingAChoice7(event) {
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
         }
         resultsPage.classList.remove("hidden")
-
+        clearInterval(countDownInterval);
     }
+}
+
+function setIntials() {
+    console.log('hello')
+    const initialsEntered = document.querySelector('.user-init-input').value;
+
+    localStorage.setItem('highestScoreInitials', initialsEntered)
+    localStorage.setItem('highestScoreTime', time)
+
+    document.querySelector('.user-init').innerText = initialsEntered;
+    document.querySelector('.score').innerText = time;
 }
 
 // Increment the correct answers to the scoreboard
@@ -199,7 +220,8 @@ correctAnswer7.addEventListener("click", function () {
 });
 
 
-//
+// On the results page, I need the "00" seconds to equate to the seconds left in the timer when the quiz was over
+
 
 startBtn.addEventListener("click", startQuiz)
 captureListOfAnswers[0].addEventListener("click", makingAChoice);
@@ -209,3 +231,4 @@ captureListOfAnswers[3].addEventListener("click", makingAChoice4);
 captureListOfAnswers[4].addEventListener("click", makingAChoice5);
 captureListOfAnswers[5].addEventListener("click", makingAChoice6);
 captureListOfAnswers[6].addEventListener("click", makingAChoice7);
+document.querySelector('.submit-init-btn').addEventListener('click', setIntials)

@@ -1,7 +1,9 @@
 # The-Ultimate-Quiz
 
 Here's a fun exercise to check if you're my friend or an acquaintance:)
-For testing purposes, of course I'll include an answer key (But do try to go through the quiz without the key)
+https://miketsypan89.github.io/The-Ultimate-Quiz/
+
+For testing purposes, of course, I'll include an answer-key (but do try to go through the quiz without the keys)
 The answers are: 
   - B) Ukraine
   - D) Football
@@ -11,4 +13,10 @@ The answers are:
   - A) Antarctica
   - D) Asheville, NC
 
-How did you do? Are you a friend of mine or just someone who only knows that I exist?
+Here are some examples of what the project will appear like on your desktop and/of your mobile device!
+
+Enjoy!!
+
+How did you do? Are you a friend of mine or just someone who only knows that I exist?:)
+
+Either way! Great job and thank you for participating in my little project!!
