@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=IM+Fell+DW+Pica&family=Press+Start+2P&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
@@ -32,7 +35,8 @@
                     <div class="user-init">initials</div>
                     <div class="score">00</div>
                 </div>
-                <button>Reset</button>
+                <div class="clear-btn-container"><button class="clear-btn">Clear</button>
+                </div>
             </div>
         </aside>
         <div class="main-body" style="background-color: rgb(247, 241, 232);">
@@ -45,10 +49,10 @@
                     </div>
                     <div class="score-meter">
                         <div class="score-correct">Correct:
-                            <div class="correct">0</div>
+                            <div class="correct-count">0</div>
                         </div>
                         <div class="score-incorrect">Incorrect:
-                            <div class="incorrect">0</div>
+                            <div class="incorrect-count">0</div>
                         </div>
                     </div>
                 </div>
@@ -56,24 +60,24 @@
             <div class="welcome-page">
                 <h3 class="quiz-greeting">Welcome to the <span class="italicized-span">True Friend</span> Quiz</h3>
                 <h4 class="challenge-paragraph">How well do you know Mike Tsypan?</h4>
-                <h5 class="quiz-instruction">Take the 1 minute Quiz to find out if you're a real friend, or an
+                <h5 class="quiz-instruction">Take the one minute Quiz to find out if you're a real friend, or an
                     acquaintance of Mike.</h5>
-                <button class="start-quiz-btn">Start</button>
+                <button class="start-quiz-btn">Start Quiz</button>
             </div>
             <div class="all-challanges">
                 <div id="challenge1" class="challenge hidden">
                     <h4 class="question">What country was Mike born in?</h4>
                     <div class="list-of-answers">
-                        <button id="q1a" class="option incorrect">
+                        <button id="q1a" class="option">
                             <div class="answer-option">A</div>United States
                         </button>
                         <button id="q1b" class="option correct">
                             <div class="answer-option">B</div>Ukraine
                         </button>
-                        <button id="q1c" class="option incorrect">
+                        <button id="q1c" class="option">
                             <div class="answer-option">C</div>Moldova
                         </button>
-                        <button id="q1d" class="option incorrect">
+                        <button id="q1d" class="option">
                             <div class="answer-option">D</div>Italy
                         </button>
                     </div>
@@ -90,7 +94,7 @@
                         <button id="q2c" class="option">
                             <div class="answer-option">C</div>Basketball
                         </button>
-                        <button id="q2d" class="option">
+                        <button id="q2d" class="option correct">
                             <div class="answer-option">D</div>Football
                         </button>
                     </div>
@@ -105,7 +109,7 @@
                     <button id="q3b" class="option">
                         <div class="answer-option">B</div>Ester, Addel, & Mike Jr
                     </button>
-                    <button id="q3c" class="option">
+                    <button id="q3c" class="option correct">
                         <div class="answer-option">C</div>Ellie, Adeline, & James
                     </button>
                     <button id="q3d" class="option">
@@ -125,7 +129,7 @@
                     <button id="q4c" class="option">
                         <div class="answer-option">C</div>Tonya
                     </button>
-                    <button id="q4d" class="option">
+                    <button id="q4d" class="option correct">
                         <div class="answer-option">D</div>Lena
                     </button>
                 </div>
@@ -136,7 +140,7 @@
                     <button id="q5a" class="option">
                         <div class="answer-option">A</div>2020 Nissan Altima
                     </button>
-                    <button id="q5b" class="option">
+                    <button id="q5b" class="option correct">
                         <div class="answer-option">B</div>2016 Ford F-150
                     </button>
                     <button id="q5c" class="option">
@@ -150,7 +154,7 @@
             <div id="challenge6" class="challenge hidden">
                 <h4 class="question">What's Mike's dream destination?</h4>
                 <div class="list-of-answers">
-                    <button id="q6a" class="option">
+                    <button id="q6a" class="option correct">
                         <div class="answer-option">A</div>Antarctica
                     </button>
                     <button id="q6b" class="option">
@@ -176,17 +180,19 @@
                     <button id="q7c" class="option">
                         <div class="answer-option">C</div>Sacramento, CA
                     </button>
-                    <button id="q7d" class="option">
+                    <button id="q7d" class="option correct">
                         <div class="answer-option">D</div>Asheville, NC
                     </button>
                 </div>
             </div>
             <div class="results-page hidden">
-                <h4 class="user-instruction">You've scored </h4>
-                <h4 class="user-instruction">0</h4>
-                <h4 class="user-instruction">Please enter your initials to record your results:</h4>
+                <h4 class="results-heading">Thank you for taking the Quiz!</h4>
+                <div class="score-placment">You've finished at: <span class="seconds-scored">00</span> seconds!</div>
+                <h4 class="verdict1 hidden">You are a True Friend!</h4>
+                <h4 class="verdict2">You are an acquaintance.</h4>
+                <h4 class="final-instruction">Please enter your initials to submit your results:</h4>
                 <div class="final-form">
-                    <input class="user-init-input">
+                    <input class="user-init-input" maxlength="4">
                     <input type="submit" class="submit-init-btn">
                 </div>
             </div>

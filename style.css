@@ -5,17 +5,17 @@
 
 body {
     background-color: rgb(247, 241, 232);
+    font-family: 'IM Fell DW Pica', serif;
 }
 
 .main-header {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
     border-bottom: rgb(97, 97, 97) 2px solid;
     z-index: 500;
     background-color: rgb(0, 0, 0);
     color: rgb(247, 241, 232);
-    font-size: 52px;
+    font-size: 62px;
     text-align: left;
     padding-left: 150px;
     font-weight: 100;
@@ -23,20 +23,27 @@ body {
 
 .side-bar {
     width: 20%;
-    background-color: aquamarine;
+    background-color: rgb(231, 218, 198);
     display: block;
+    font-family: 'Fredoka', sans-serif;
+    box-shadow: 3px 3px 8px -1px rgba(97, 97, 97, 1);
+    z-index: 100;
 }
 
 .aside-section-title {
     padding: 10px;
+    padding-left: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 35px;
 }
 
 .user-list {
     display: block;
     padding: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
 }
 
 .user-info {
@@ -56,12 +63,27 @@ body {
 .view-hide-btn {
     width: 60px;
     height: 60px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+}
+
+.clear-btn-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.clear-btn {
+    width: 15vw;
+    height: 35px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
 }
 
 .main-body {
     display: block;
     width: 80%;
-    
 }
 
 .scoreboard {
@@ -74,6 +96,7 @@ body {
     border-radius: 0 0 20px 20px;
     background-color: rgb(231, 218, 198);
     box-shadow: 0px 12px 13px -10px rgba(0, 0, 0, 0.49);
+    font-family: 'Fredoka', sans-serif;
 }
 
 .scoreboard-header {
@@ -81,11 +104,13 @@ body {
     text-align: center;
     padding: 5px;
     font-size: 26px;
+    font-weight: bold;
 }
 
 .timer {
     display: flex;
-    border-top: solid gray 1px;
+    border-top: solid rgb(206, 191, 172) 1px;
+    border-right: solid rgb(206, 191, 172) 1px;
     padding: 20px;
     padding-left: 50px;
     width: 250px;
@@ -111,7 +136,7 @@ body {
 .score-meter {
     display: flex;
     justify-content: space-evenly;
-    border-top: solid gray 1px;
+    border-top: solid rgb(206, 191, 172) 1px;
     padding: 20px;
     width: 500px;
     font-size: 22px;
@@ -125,7 +150,7 @@ body {
 }
 
 .welcome-page {
-    margin: 2vw;
+    margin: 3vw;
     text-align: center;
     padding: 30px;
     padding-bottom: 250px;
@@ -135,28 +160,38 @@ body {
 }
 
 .quiz-greeting {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 50px;
     font-size: 54px;
+    color: rgb(66, 19, 10);
 }
 
 .italicized-span {
     font-style: italic;
 }
 
+.seconds-scored {
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(39, 39, 39);
+    font-size: 50px;
+}
+
 .challenge-paragraph {
     padding: 25px;
+    font-size: 30px;
 }
 
 .quiz-instruction {
     padding: 15px;
     padding-bottom: 80px;
+    font-size: 20px;
 }
 
 .start-quiz-btn {
     width: 250px;
     height: 60px;
-    border-radius: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
 }
 
 .all-challanges {
@@ -164,7 +199,7 @@ body {
 }
 
 .challenge {
-    margin: 2vw;
+    margin: 3vw;
     text-align: center;
     padding: 30px;
     padding-bottom: 250px;
@@ -200,6 +235,8 @@ body {
     align-items: center;
     padding: 10px;
     font-size: 22px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
 }
 
 .answer-option {
@@ -215,19 +252,14 @@ body {
 }
 
 .results-page {
-    margin: 2vw;
+    margin: 3vw;
     text-align: center;
     padding: 30px;
     padding-bottom: 250px;
     height: 670px;
     background-color: rgb(243, 239, 239);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
-}
-
-.user-init-input {
-    width: 250px;
-    height: 60px;
-    border-radius: 15px;
+    
 }
 
 .results-page {
@@ -235,20 +267,63 @@ body {
     padding-bottom: 100px;
 }
 
-.user-instruction {
-    padding: 15px;
-    padding-bottom: 50px;
+.results-heading {
+    padding: 25px;
+    padding-top: 20px;
+    font-size: 54px;
+    color: rgb(66, 19, 10);
 }
 
-.submit-init-btn {
-    width: 250px;
-    height: 60px;
-    border-radius: 15px;
+.score-placment {
+    padding: 15px;
+    padding-bottom: 50px;
+    padding-bottom: 10px;
+    font-size: 34px;
+    color: rgb(66, 19, 10);
+}
+
+.verdict1 {
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgb(9, 179, 0);
+}
+
+.verdict2 {
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgb(201, 0, 0);
+}
+
+.final-instruction {
+    font-size: 34px;
+    color: rgb(66, 19, 10);
 }
 
 .final-form {
-    content: "\a";
-    white-space: pre;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+}
+
+.submit-init-btn {
+    width: 170px;
+    height: 80px;
+    border-radius: 0 0 25px 25px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    border-color: rgb(243, 239, 239);
+
+}
+
+.user-init-input {
+    width: 170px;
+    height: 80px;
+    border-radius: 25px 25px 0 0;
+    border-color: rgb(243, 239, 239);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'IM Fell DW Pica', serif;
+    color: rgb(29, 29, 130);
 }
 
 .hidden {
