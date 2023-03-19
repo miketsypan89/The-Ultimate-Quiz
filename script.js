@@ -17,7 +17,7 @@ console.log(captureListOfAnswers)
 
 // set variables for the timer
 var countDownInterval = null;
-let time = 60;
+let time = 59;
 const countdownEl = document.getElementById('countdown');
 countdownEl.innerHTML = "01:00";
 
@@ -25,7 +25,7 @@ const highScoreInitials = localStorage.getItem('highestScoreInitials')
 const highScoreTime = localStorage.getItem('highestScoreTime')
 
 document.querySelector('.user-init').innerText = highScoreInitials;
-document.querySelector('.score').innerText = highScoreTime;
+document.querySelector('.user-time').innerText = highScoreTime;
 
 
 
@@ -35,7 +35,7 @@ function updateCountdown() {
     seconds = seconds < 1 ? "0" + seconds : seconds;
     countdownEl.innerHTML = `0${minutes}:${seconds}`;
     time--;
-    if (time === -1) {
+    if (time < 0) {
         clearInterval(countDownInterval);
         console.log('counter stopped')
     }
@@ -165,15 +165,31 @@ function makingAChoice7(event) {
     }
 }
 
+// using local storage to set TIME REMAINING to <aside> when user submits their initials
 function setIntials() {
-    console.log('hello')
     const initialsEntered = document.querySelector('.user-init-input').value;
+    var add1Second = time + 1;
 
     localStorage.setItem('highestScoreInitials', initialsEntered)
-    localStorage.setItem('highestScoreTime', time)
+    localStorage.setItem('highestScoreTime', "00:" + add1Second)
+
+
 
     document.querySelector('.user-init').innerText = initialsEntered;
-    document.querySelector('.score').innerText = time;
+    document.querySelector('.user-time').innerText = "00:" + add1Second;
+}
+
+
+// Get the HTML element you want to remove the class from
+let verdict1 = document.getElementById("verdict1");
+let verdict2 = document.getElementById("verdict2");
+var numberOfCorrects = document.getElementsByClassName("correct-counter")
+
+
+if (numberOfCorrects === 7) {
+    verdict1.classList.remove("hidden");
+} else {
+    verdict2.classList.remove("hidden");
 }
 
 // Increment the correct answers to the scoreboard

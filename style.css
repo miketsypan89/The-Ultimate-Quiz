@@ -31,12 +31,12 @@ body {
 }
 
 .aside-section-title {
-    padding: 10px;
+    padding: 20px;
     padding-left: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .user-list {
@@ -60,26 +60,6 @@ body {
     display: flex;
 }
 
-.view-hide-btn {
-    width: 60px;
-    height: 60px;
-    font-family: 'Fredoka', sans-serif;
-    font-size: 20px;
-}
-
-.clear-btn-container {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.clear-btn {
-    width: 15vw;
-    height: 35px;
-    font-family: 'Fredoka', sans-serif;
-    font-size: 20px;
-}
 
 .main-body {
     display: block;
@@ -102,8 +82,8 @@ body {
 .scoreboard-header {
     width: 100%;
     text-align: center;
-    padding: 5px;
-    font-size: 26px;
+    padding: 15px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -111,7 +91,7 @@ body {
     display: flex;
     border-top: solid rgb(206, 191, 172) 1px;
     border-right: solid rgb(206, 191, 172) 1px;
-    padding: 20px;
+    padding: 15px;
     padding-left: 50px;
     width: 250px;
     text-align: center;
@@ -132,7 +112,7 @@ body {
     justify-content: center;
     align-items: center;
     border-top: solid rgb(206, 191, 172) 1px;
-    padding: 20px;
+    padding: 15px;
     width: 500px;
     font-size: 22px;
     font-weight: bold;

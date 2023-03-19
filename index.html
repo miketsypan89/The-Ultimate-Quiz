@@ -17,17 +17,13 @@
     <div class="both-sections">
         <aside class="side-bar">
             <h2 class="aside-section-title">Highest Score
-                <button class="view-hide-btn">View</button>
             </h2>
             <div class="user-list">
                 <div class="user-info">
                     <div class="user-init"></div>
-                    <div class="score"></div>
+                    <div class="score-of-correct"></div>
+                    <div class="user-time"></div>
                 </div>
-
-                <div class="clear-btn-container"><button class="clear-btn">Clear</button>
-                </div>
-            </div>
         </aside>
         <div class="main-body" style="background-color: rgb(247, 241, 232);">
             <div class="scoreboard">
@@ -175,8 +171,10 @@
             <div class="results-page hidden">
                 <h4 class="results-heading">Thank you for taking the Quiz!</h4>
                 <div class="score-placment">You've finished at: <span class="seconds-scored">00</span> seconds!</div>
-                <h4 class="verdict1 ">You've got all of the 7 answers right! You must be a True Friend! :)</h4>
-                <h4 class="verdict2 hidden">You appear to be Mike's acquaintance because you've missed at least one
+                <h4 id="verdict1" class="verdict1 hidden">You've got all of the 7 answers right! You must be a True
+                    Friend! :)</h4>
+                <h4 id="verdict2" class="verdict2 hidden">You appear to be Mike's acquaintance because you've missed at
+                    least one
                     answer. :(
                 </h4>
                 <h4 class="final-instruction">Please enter your initials to submit your results:</h4>
