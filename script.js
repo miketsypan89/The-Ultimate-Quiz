@@ -13,6 +13,8 @@ var resultsPage = document.querySelector(".results-page")
 var option = document.querySelector(".option");
 var captureListOfAnswers = document.querySelectorAll(".list-of-answers");
 console.log(captureListOfAnswers)
+var secondsScored = document.querySelector(".seconds-scored");
+var secondsLeftInTimer = document.querySelector(".countdown")
 
 
 // set variables for the timer
@@ -62,6 +64,7 @@ function makingAChoice(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
 
         }
         challenge2.classList.remove("hidden")
@@ -79,6 +82,7 @@ function makingAChoice2(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
         }
         challenge3.classList.remove("hidden")
     }
@@ -95,6 +99,7 @@ function makingAChoice3(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
         }
         challenge4.classList.remove("hidden")
     }
@@ -111,6 +116,7 @@ function makingAChoice4(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
         }
         challenge5.classList.remove("hidden")
     }
@@ -127,6 +133,7 @@ function makingAChoice5(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
         }
         challenge6.classList.remove("hidden")
     }
@@ -143,6 +150,7 @@ function makingAChoice6(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
         }
         challenge7.classList.remove("hidden")
     }
@@ -159,6 +167,8 @@ function makingAChoice7(event) {
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
+            time = time - 7;
+
         }
         resultsPage.classList.remove("hidden")
         clearInterval(countDownInterval);
@@ -191,6 +201,7 @@ if (numberOfCorrects === 7) {
 } else {
     verdict2.classList.remove("hidden");
 }
+
 
 // Increment the correct answers to the scoreboard
 // declaring vars for the correct answers

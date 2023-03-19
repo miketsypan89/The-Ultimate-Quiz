@@ -24,6 +24,7 @@ body {
 .side-bar {
     width: 20%;
     background-color: rgb(231, 218, 198);
+    border-radius: 0 0 15px 0;
     display: block;
     font-family: 'Fredoka', sans-serif;
     box-shadow: 3px 3px 8px -1px rgba(97, 97, 97, 1);
@@ -127,6 +128,7 @@ body {
 .correct-count-digit {
     padding-right: 8px;
 }
+
 .countdown {
     padding-left: 8px;
 }
@@ -134,6 +136,7 @@ body {
 .welcome-page {
     margin: 3vw;
     text-align: center;
+    border-radius: 15px;
     padding: 30px;
     padding-bottom: 250px;
     height: 670px;
@@ -165,17 +168,36 @@ body {
 }
 
 .quiz-instruction {
-    padding: 15px;
-    padding-bottom: 80px;
+    padding: 5px;
+    padding-bottom: 10px;
     font-size: 30px;
     color: rgb(109, 87, 67);
 }
 
+.quiz-rules {
+    padding: 15px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: rgb(179, 41, 7);
+}
+
 .start-quiz-btn {
     width: 250px;
-    height: 60px;
+    height: 80px;
+    border-radius: 15px;
+    border: none;
     font-family: 'Fredoka', sans-serif;
     font-size: 30px;
+    background-color: rgb(218, 213, 208);
+}
+
+.start-quiz-btn:hover {
+    background-color: rgb(211, 203, 194);
+
+}
+
+.start-quiz-btn:active {
+    background-color: rgb(172, 163, 153);
 }
 
 .all-challanges {
@@ -217,11 +239,23 @@ body {
     height: auto;
     margin-bottom: 30px;
     display: flex;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(218, 213, 208);
     align-items: center;
     padding: 10px;
     font-size: 22px;
     font-family: 'Fredoka', sans-serif;
     font-size: 25px;
+}
+
+.option:hover {
+    background-color: rgb(211, 203, 194);
+
+}
+
+.option:active {
+    background-color: rgb(172, 163, 153);
 }
 
 .answer-option {
@@ -298,9 +332,20 @@ body {
     border-radius: 0 0 25px 25px;
     font-family: 'Fredoka', sans-serif;
     font-size: 30px;
+    border: none;
     border-color: rgb(243, 239, 239);
+    background-color: rgb(218, 213, 208);
+}
+
+.submit-init-btn:hover {
+    background-color: rgb(211, 203, 194);
 
 }
+
+.submit-init-btn:active {
+    background-color: rgb(172, 163, 153);
+}
+
 
 .user-init-input {
     width: 170px;
