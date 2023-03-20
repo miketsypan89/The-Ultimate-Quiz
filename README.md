@@ -13,9 +13,16 @@ The answers are:
   - A) Antarctica
   - D) Asheville, NC
 
-Here are some examples of what the project will appear like on your desktop and/of your mobile device!
+Here are some examples of what the project will appear like on your desktop and/of your mobile device:
 
-Enjoy!!
+Desktop:
+![image](https://user-images.githubusercontent.com/124936942/226450780-7c9cbcd4-8f07-45ef-a0ff-ae8c2053c4b4.png)
+![image](https://user-images.githubusercontent.com/124936942/226450908-ec15b36e-5da1-4860-a9e0-021e01dadd27.png)
+![image](https://user-images.githubusercontent.com/124936942/226451030-6b0689d2-3a9d-475f-ae37-983a19e4e1ec.png)
+![image](https://user-images.githubusercontent.com/124936942/226451184-d823e250-e355-447f-81bd-3809b4983d0f.png)
+![image](https://user-images.githubusercontent.com/124936942/226451415-3aca2772-6545-40a3-92fa-9de9c904519b.png)
+
+
 
 How did you do? Are you a friend of mine or just someone who only knows that I exist?:)
 
