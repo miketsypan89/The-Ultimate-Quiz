@@ -140,7 +140,7 @@ body {
     padding: 30px;
     padding-bottom: 250px;
     height: 670px;
-    background-color: rgb(243, 239, 239);
+    background-color: rgba(243, 239, 239, 0.875);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
 }
 
@@ -206,11 +206,12 @@ body {
 
 .challenge {
     margin: 3vw;
+    border-radius: 15px;
     text-align: center;
     padding: 30px;
     padding-bottom: 250px;
     height: 670px;
-    background-color: rgb(243, 239, 239);
+    background-color: rgba(243, 239, 239, 0.875);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
 
 }
@@ -272,11 +273,12 @@ body {
 
 .results-page {
     margin: 3vw;
+    border-radius: 15px;
     text-align: center;
     padding: 30px;
     padding-bottom: 250px;
     height: 670px;
-    background-color: rgb(243, 239, 239);
+    background-color: rgba(243, 239, 239, 0.875);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.49);
 
 }
@@ -362,13 +364,15 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
+
     .main-header {
         color: rgb(247, 241, 232);
         padding-left: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 34px;
+        width: 430px;
     }
 
     .both-sections {
@@ -377,9 +381,9 @@ body {
     }
 
     .side-bar {
-        height: 100px;
-        width: 390px;
-        border-radius: none;
+        height: 80px;
+        width: 430px;
+        border-radius: 0 0 0 0;
         border-bottom: solid rgb(231, 218, 198);
     }
 
@@ -388,10 +392,11 @@ body {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
     .countdown {
         font-size: 18px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .user-list {
@@ -401,38 +406,63 @@ body {
 
     .scoreboard {
         padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         margin-left: 0%;
         margin-right: 0%;
         border-radius: 0;
-        width: 100%;
-        height: 100px;
-        width: 390px;
+        width: 430px;
+        height: 80px;
         border-radius: none;
     }
+
     .score-meter {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        border-top: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 215px;
     }
+
     .correct-count {
         font-size: 18px;
     }
+
     .correct-count-digit {
         font-size: 18px;
     }
+
     .timer {
+        border-top: none;
+        border-right: none;
+        width: 215px;
         font-size: 18px;
         padding-left: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
+
     .user-info {
+        display: flex;
+        justify-content: space-around;
         font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
     }
+
     .user-list {
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
     .main-body {
-        margin-right: 0vw;
+        width: 430px;
+        margin: 1vw;
+        justify-content: center;
+    }
+
+    .scoreboard-content {
+        width: 430px;
     }
 
     .scoreboard-header {
@@ -441,16 +471,20 @@ body {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 25px;
-        height: 50px;
+        height: 30px;
     }
 
     .welcome-page {
-        margin: 1vw;
+        margin-top: 20px;
+        margin-left: 15px;
+        padding: 10px;
+        width: 390px;
+        height: auto;
     }
 
     .quiz-greeting {
-        font-size: 24px;
-        padding-top: 20px;
+        font-size: 45px;
+        padding-top: 25px;
         padding-bottom: 20px;
     }
 
@@ -476,5 +510,100 @@ body {
         padding-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .start-quiz-btn {
+        height: 50px;
+        width: 200px;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .question {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .list-of-answers {
+        padding-left: 30px;
+    }
+
+    .option {
+        margin-bottom: 10px;
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+
+    }
+
+    .answer-option {
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        font-size: 20px;
+    }
+
+    .challenge {
+        height: 450px;
+    }
+
+    .all-challanges {
+        text-align: center;
+        align-items: center;
+    }
+
+    .results-page {
+        margin-top: 20px;
+        margin-left: 15px;
+        padding: 10px;
+        width: 390px;
+        height: auto;
+    }
+
+    .results-heading {
+        font-size: 45px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .score-placment {
+        font-size: 24px;
+    }
+
+    .seconds-scored {
+        font-size: 34px;
+    }
+
+    .verdict2 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .verdict1 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .final-instruction {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    .user-init-input {
+        width: 120px;
+        height: 50px;
+        border-radius: 15px 15px 0 0;
+        font-size: 35px;
+    }
+
+    .submit-init-btn {
+        width: 120px;
+        height: 50px;
+        border-radius: 0 0 15px 15px;
+        font-size: 26px;
     }
 }
