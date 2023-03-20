@@ -176,7 +176,11 @@ body {
 
 .quiz-rules {
     padding: 15px;
-    padding-bottom: 30px;
+    font-size: 20px;
+    color: rgb(179, 41, 7);
+}
+
+.quiz-warning {
     font-size: 20px;
     color: rgb(179, 41, 7);
 }
@@ -341,7 +345,6 @@ body {
 
 .submit-init-btn:hover {
     background-color: rgb(211, 203, 194);
-
 }
 
 .submit-init-btn:active {
@@ -605,5 +608,6 @@ body {
         height: 50px;
         border-radius: 0 0 15px 15px;
         font-size: 26px;
+        text-align: center;
     }
 }

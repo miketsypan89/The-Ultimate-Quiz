@@ -168,10 +168,18 @@ function makingAChoice7(event) {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
             time = time - 7;
-
         }
         resultsPage.classList.remove("hidden")
         clearInterval(countDownInterval);
+    } secondsScored.innerHTML = time + 1;
+
+    let verdict1 = document.getElementById("verdict1");
+    let verdict2 = document.getElementById("verdict2");
+    if (numberOfCorrects === 7) {
+        verdict1.classList.remove("hidden");
+    } else {
+        verdict1.classList.add("hidden");
+        verdict2.classList.remove("hidden");
     }
 }
 
@@ -191,16 +199,8 @@ function setIntials() {
 
 
 // Get the HTML element you want to remove the class from
-let verdict1 = document.getElementById("verdict1");
-let verdict2 = document.getElementById("verdict2");
+
 var numberOfCorrects = document.getElementsByClassName("correct-counter")
-
-
-if (numberOfCorrects === 7) {
-    verdict1.classList.remove("hidden");
-} else {
-    verdict2.classList.remove("hidden");
-}
 
 
 // Increment the correct answers to the scoreboard
