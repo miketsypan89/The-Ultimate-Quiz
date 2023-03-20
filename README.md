@@ -23,6 +23,11 @@ Desktop:
 ![image](https://user-images.githubusercontent.com/124936942/226451415-3aca2772-6545-40a3-92fa-9de9c904519b.png)
 
 
+Mobile Device (screen width: 430px or less)
+![image](https://user-images.githubusercontent.com/124936942/226452291-2441cd82-33ca-4b59-ae0b-784538ba5310.png)
+
+
+
 
 How did you do? Are you a friend of mine or just someone who only knows that I exist?:)
 
