@@ -60,6 +60,8 @@ function makingAChoice(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
@@ -78,6 +80,8 @@ function makingAChoice2(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
@@ -95,6 +99,8 @@ function makingAChoice3(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
@@ -112,6 +118,8 @@ function makingAChoice4(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
@@ -129,6 +137,8 @@ function makingAChoice5(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
@@ -146,6 +156,8 @@ function makingAChoice6(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
@@ -163,45 +175,47 @@ function makingAChoice7(event) {
         if (btnClicked.classList.contains("correct")) {
             //correct answer causes the main-body page to turn green
             document.querySelector(".main-body").style.backgroundColor = "#4ec864";
+            count++;
+            correctCounter.innerHTML = count;
 
         } else {
             //incorrect answer causes the main-body page to turn red
             document.querySelector(".main-body").style.backgroundColor = "#c14444";
             time = time - 7;
         }
+        if (count === 7) {
+            verdict1.classList.remove("hidden");
+        } else {
+            verdict2.classList.remove("hidden");
+        }
         resultsPage.classList.remove("hidden")
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+        seconds = seconds < 1 ? "0" + seconds : seconds;
+        countdownEl.innerHTML = `0${minutes}:${seconds}`;
         clearInterval(countDownInterval);
-    } secondsScored.innerHTML = time + 1;
-
-    let verdict1 = document.getElementById("verdict1");
-    let verdict2 = document.getElementById("verdict2");
-    if (numberOfCorrects === 7) {
-        verdict1.classList.remove("hidden");
-    } else {
-        verdict1.classList.add("hidden");
-        verdict2.classList.remove("hidden");
+        secondsScored.innerHTML = time;
     }
 }
+
+let verdict1 = document.getElementById("verdict1");
+let verdict2 = document.getElementById("verdict2");
 
 // using local storage to set TIME REMAINING to <aside> when user submits their initials
 function setIntials() {
     const initialsEntered = document.querySelector('.user-init-input').value;
-    var add1Second = time + 1;
+    // var add1Second = time;
 
     localStorage.setItem('highestScoreInitials', initialsEntered)
-    localStorage.setItem('highestScoreTime', "00:" + add1Second)
-
-
+    localStorage.setItem('highestScoreTime', "00:" + time)
 
     document.querySelector('.user-init').innerText = initialsEntered;
-    document.querySelector('.user-time').innerText = "00:" + add1Second;
+    document.querySelector('.user-time').innerText = "00:" + time;
+
 }
 
 
 // Get the HTML element you want to remove the class from
-
-var numberOfCorrects = document.getElementsByClassName("correct-counter")
-
 
 // Increment the correct answers to the scoreboard
 // declaring vars for the correct answers
@@ -217,38 +231,7 @@ var correctCounter = document.getElementById("correct-counter");
 var count = 0;
 
 
-correctAnswer1.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-correctAnswer2.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-correctAnswer3.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-correctAnswer4.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-correctAnswer5.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-correctAnswer6.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-correctAnswer7.addEventListener("click", function () {
-    count++;
-    correctCounter.innerHTML = count;
-});
-
-
 // On the results page, I need the "00" seconds to equate to the seconds left in the timer when the quiz was over
-
 
 startBtn.addEventListener("click", startQuiz)
 captureListOfAnswers[0].addEventListener("click", makingAChoice);
