@@ -33,5 +33,5 @@ Mobile Device // screen width: 430px or less:
 
 
 
-# How did you do? Are you a friend of mine or just someone who only knows that I exist?:)
+How did you do? Are you a friend of mine or just someone who only knows that I exist?:)
 Either way! Great job and thank you for participating in my little project!!
